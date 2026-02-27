@@ -7,24 +7,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "020A940F-3E0B-41D7-AD03-6CEE3C124491"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GalaxyEgg/New Group/KandeiBajirmViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "270"
-            endingLineNumber = "270"
-            landmarkName = "handleNativeBridgeMessage(message:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "D8361DC0-A31D-4E6F-9FA9-A6A6570CDCB8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GalaxyEgg/New Group/WidokGry.swift"
@@ -39,63 +23,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BF8A0DC3-03B7-46D3-B7D9-B54E7FC4F1F4"
+            uuid = "93E57B14-C9DA-4AC5-B7F3-D622801B171C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GalaxyEgg/New Group/Piwehe.swift"
+            filePath = "GalaxyEgg/New Group/KandeiBajirmViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "Gyaueiow()"
-            landmarkType = "9">
+            startingLineNumber = "270"
+            endingLineNumber = "270"
+            landmarkName = "handleNativeBridgeMessage(message:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "69A008B4-8A51-4CE5-B8CD-BE0DD6C662D8"
+            uuid = "9026520E-0910-44B2-ABFC-4C23975AB25A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GalaxyEgg/New Group/WidokGry.swift"
+            filePath = "GalaxyEgg/New Group/KandeiBajirmViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "317"
-            endingLineNumber = "317"
-            landmarkName = "psomejUsdf()"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "updateJSData(webView:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "69A008B4-8A51-4CE5-B8CD-BE0DD6C662D8 - a001dc6ea921ccf0"
+                  uuid = "9026520E-0910-44B2-ABFC-4C23975AB25A - dc94c4622e20e77a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(2) suspend resume partial function for closure #1 () async throws -&gt; () in GalaxyEgg.WidokGry.psomejUsdf() -&gt; ()"
+                  symbolName = "closure #1 @Swift.MainActor @Sendable (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GalaxyEgg.KandeiBajirmViewController.updateJSData(webView: __C.WKWebView) -&gt; ()"
                   moduleName = "GalaxyEgg.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hades/Desktop/Code/26/02/0214%2077%E5%BE%85%E6%8F%90/git%20sdk/GalaxyEgg/GalaxyEgg/GalaxyEgg/New%20Group/WidokGry.swift"
+                  urlString = "file:///Users/hades/Desktop/Code/26/02/0214%2077%E5%BE%85%E6%8F%90/git%20sdk/GalaxyEgg/GalaxyEgg/GalaxyEgg/New%20Group/KandeiBajirmViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "317"
-                  endingLineNumber = "317">
+                  startingLineNumber = "208"
+                  endingLineNumber = "208">
                </Location>
                <Location
-                  uuid = "69A008B4-8A51-4CE5-B8CD-BE0DD6C662D8 - a001dc6ea921ccf0"
+                  uuid = "9026520E-0910-44B2-ABFC-4C23975AB25A - dc94c4622e20e77a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(2) suspend resume partial function for closure #1 () async throws -&gt; () in GalaxyEgg.WidokGry.psomejUsdf() -&gt; ()"
+                  symbolName = "closure #1 @Swift.MainActor @Sendable (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GalaxyEgg.KandeiBajirmViewController.updateJSData(webView: __C.WKWebView) -&gt; ()"
                   moduleName = "GalaxyEgg.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hades/Desktop/Code/26/02/0214%2077%E5%BE%85%E6%8F%90/git%20sdk/GalaxyEgg/GalaxyEgg/GalaxyEgg/New%20Group/WidokGry.swift"
+                  urlString = "file:///Users/hades/Desktop/Code/26/02/0214%2077%E5%BE%85%E6%8F%90/git%20sdk/GalaxyEgg/GalaxyEgg/GalaxyEgg/New%20Group/KandeiBajirmViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "317"
-                  endingLineNumber = "317">
+                  startingLineNumber = "208"
+                  endingLineNumber = "208">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7E9F3D9-A749-419C-808F-907F747B4EDE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GalaxyEgg/New Group/KandeiBajirmViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "updateJSData(webView:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

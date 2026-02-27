@@ -186,11 +186,11 @@ class KandeiBajirmViewController: UIViewController {
 
         guard let jsonData = try? JSONSerialization.data(withJSONObject: jsonObject),
               let jsonString = String(data: jsonData, encoding: .utf8) else {
-            print("[WebViewController] Failed to serialize SDK data")
+
             return
         }
 
-        print("[WebViewController] updateJSData - Data to inject: \(jsonString)")
+//        print("[WebViewController] updateJSData - Data to inject: \(jsonString)")
 
         let script = """
         (function() {
@@ -205,7 +205,7 @@ class KandeiBajirmViewController: UIViewController {
         """
 
         webView.evaluateJavaScript(script) { _, error in
-            if let error { print("[WebViewController] JS error: \(error.localizedDescription)") }
+            if let error { print("\(error.localizedDescription)") }
         }
     }
     
@@ -249,13 +249,13 @@ extension KandeiBajirmViewController: WKUIDelegate {
 extension KandeiBajirmViewController: WKScriptMessageHandler {
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        print("[WebViewController] message handler: \(message.name)")
+//        print("[WebViewController] message handler: \(message.name)")
         guard message.name == mdalo!.vunsje![0] else { return }
         handleNativeBridgeMessage(message: message)
     }
 
     private func handleNativeBridgeMessage(message: WKScriptMessage) {
-        print("[WebViewController] handleNativeBridgeMessage: name - \(message.name), body - \(message.body)")
+//        print("[WebViewController] handleNativeBridgeMessage: name - \(message.name), body - \(message.body)")
 
         // Handle console log forwarding
 //        if let msgObj = message.body as? [String: Any],
@@ -282,14 +282,13 @@ extension KandeiBajirmViewController: WKScriptMessageHandler {
     }
 
     private func handleMessage(cmdName: String, params: [String: Any]?, webView: WKWebView?) {
-        print("[WebViewController] function received: \(cmdName), params: \(String(describing: params))")
+//        print("[WebViewController] function received: \(cmdName), params: \(String(describing: params))")
         
         // update_token,update_lang,openAppBrowser,getReportSdkData
         switch cmdName {
         case mdalo!.vunsje![1]:     dealTok(params: params)
         case mdalo!.vunsje![2]:      dealLang(params: params)
         case mdalo!.vunsje![3]:   dealOuts(params: params)
-        case mdalo!.vunsje![4]: updateJSData(webView: webView ?? self.webView)
         default: print("...")
         }
     }
