@@ -322,7 +322,7 @@ public class WidokGry: UIView {
                         MnahsDusie()
                     }
                 } else {
-                    MnahsDusie()
+                    SmndjLosie(huss)
                 }
             } else {
                 MnahsDusie()

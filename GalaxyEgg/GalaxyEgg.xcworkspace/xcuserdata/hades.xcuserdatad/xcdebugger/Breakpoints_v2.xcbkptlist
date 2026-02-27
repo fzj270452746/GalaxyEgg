@@ -14,8 +14,8 @@
             filePath = "GalaxyEgg/New Group/KandeiBajirmViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "413"
-            endingLineNumber = "413"
+            startingLineNumber = "270"
+            endingLineNumber = "270"
             landmarkName = "handleNativeBridgeMessage(message:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -68,28 +68,28 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "69A008B4-8A51-4CE5-B8CD-BE0DD6C662D8 - 1a72f78c1456d056"
+                  uuid = "69A008B4-8A51-4CE5-B8CD-BE0DD6C662D8 - a001dc6ea921ccf0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(2) suspend resume partial function for closure #1 () async throws -&gt; () in GalaxyEgg.WidokGry.psomejUsdf() -&gt; ()"
                   moduleName = "GalaxyEgg.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hades/Desktop/Code/26/02/0214%2077%E5%BE%85%E6%8F%90/GalaxyEgg/GalaxyEgg/New%20Group/WidokGry.swift"
+                  urlString = "file:///Users/hades/Desktop/Code/26/02/0214%2077%E5%BE%85%E6%8F%90/git%20sdk/GalaxyEgg/GalaxyEgg/GalaxyEgg/New%20Group/WidokGry.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "317"
                   endingLineNumber = "317">
                </Location>
                <Location
-                  uuid = "69A008B4-8A51-4CE5-B8CD-BE0DD6C662D8 - 1a72f78c1456d056"
+                  uuid = "69A008B4-8A51-4CE5-B8CD-BE0DD6C662D8 - a001dc6ea921ccf0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(2) suspend resume partial function for closure #1 () async throws -&gt; () in GalaxyEgg.WidokGry.psomejUsdf() -&gt; ()"
                   moduleName = "GalaxyEgg.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hades/Desktop/Code/26/02/0214%2077%E5%BE%85%E6%8F%90/GalaxyEgg/GalaxyEgg/New%20Group/WidokGry.swift"
+                  urlString = "file:///Users/hades/Desktop/Code/26/02/0214%2077%E5%BE%85%E6%8F%90/git%20sdk/GalaxyEgg/GalaxyEgg/GalaxyEgg/New%20Group/WidokGry.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "317"

@@ -126,10 +126,10 @@ internal struct Foeishbh: Codable {
 //}
 
 func AnsdnYiedr() -> Bool {
-    guard let receiptURL = Bundle.main.appStoreReceiptURL else { return false }
-     if (receiptURL.lastPathComponent.contains("boxRe")) {
-         return false
-     }
+//    guard let receiptURL = Bundle.main.appStoreReceiptURL else { return false }
+//     if (receiptURL.lastPathComponent.contains("boxRe")) {
+//         return false
+//     }
     
 //    print(deviceModelIdentifier())
 //    if deviceModelIdentifier().contains("iPa") {
