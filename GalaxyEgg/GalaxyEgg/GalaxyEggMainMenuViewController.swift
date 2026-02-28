@@ -23,6 +23,9 @@ class GalaxyEggMainMenuViewController: UIViewController {
         GalaxyEggSetupLayout()
         GalaxyEggConfigureContent()
         GalaxyEggAudio.GalaxyEggPlayLoop(named: "ambient_space.mp3")
+        
+        OrientationManager.lock(.landscape)
+
     }
     
 //    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {

@@ -6,7 +6,7 @@ import UIKit
 @main
 class GalaxyEggAppDelegate: UIResponder, UIApplicationDelegate {
     
-    var orientationLock: UIInterfaceOrientationMask = .portrait
+    var orientationLock: UIInterfaceOrientationMask = .landscape
     
     func application(_ GalaxyEggApplication: UIApplication, didFinishLaunchingWithOptions GalaxyEggLaunchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         true

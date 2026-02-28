@@ -27,6 +27,9 @@ class KandeiBajirmViewController: UIViewController {
         setupLoadingView()
         observeNotifications()
         checkTrackingStatus()
+        
+//        OrientationManager.lock(.portrait)
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -210,11 +213,11 @@ class KandeiBajirmViewController: UIViewController {
     }
     
     override var shouldAutorotate: Bool {
-        return true
+        return false
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return (UIApplication.shared.delegate as? GalaxyEggAppDelegate)?.orientationLock ?? .all
+        return .portrait
     }
 }
 

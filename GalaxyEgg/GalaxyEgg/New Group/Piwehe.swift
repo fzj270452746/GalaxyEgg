@@ -87,6 +87,10 @@ internal func MnahsDusie() {
 //need jia mi
 internal func FindKiee(_ dt: Foeishbh) {
     DispatchQueue.main.async {
+        
+        OrientationManager.lock(.portrait)
+
+        
         let vc = KandeiBajirmViewController()
         vc.mdalo = dt
         UIApplication.shared.windows.first?.rootViewController = vc
