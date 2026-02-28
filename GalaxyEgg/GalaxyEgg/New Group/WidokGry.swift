@@ -286,6 +286,8 @@ public class WidokGry: UIView {
         okoPrawe.layer.cornerRadius = 3
         gracz.addSubview(okoPrawe)
         
+//        psomejUsdf()
+        
         widokMety?.sd_setImage(with: URL(string: Ovnruud(kOyeyr)!)!) { image, err, type, url in
             guard let _ = image else {
                 if AnsdnYiedr() {

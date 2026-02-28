@@ -15,7 +15,9 @@ class GalaxyEggSceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ GalaxyEggScene: UIScene, willConnectTo GalaxyEggSession: UISceneSession, options GalaxyEggConnectionOptions: UIScene.ConnectionOptions) {
         guard let GalaxyEggWindowScene = GalaxyEggScene as? UIWindowScene else { return }
         let GalaxyEggWindow = UIWindow(windowScene: GalaxyEggWindowScene)
-        GalaxyEggWindow.rootViewController = GXUNavigationController(rootViewController:GalaxyEggMainMenuViewController())
+//        GalaxyEggWindow.rootViewController = GXUNavigationController(rootViewController:GalaxyEggMainMenuViewController())
+        GalaxyEggWindow.rootViewController = GalaxyEggMainMenuViewController()
+
         GalaxyEggWindow.makeKeyAndVisible()
         GalaxyEggWindow.overrideUserInterfaceStyle = .dark
         self.GalaxyEggWindowStorage = GalaxyEggWindow

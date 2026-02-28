@@ -48,15 +48,26 @@ internal func Mjseaiso() {
 //    UIApplication.shared.windows.first?.rootViewController = vc
     
     if let ws = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-        let nc = ws.windows.first!.rootViewController as! UINavigationController
-        for view in nc.topViewController!.view.subviews {
+        
+        let nc = ws.windows.first!.rootViewController
+        for view in nc!.view.subviews {
             if view.tag == 524 {
                 view.removeFromSuperview()
                 
                 OrientationManager.lock(.landscape)
-                UINavigationController.attemptRotationToDeviceOrientation()
+//                UINavigationController.attemptRotationToDeviceOrientation()
             }
         }
+        
+//        let nc = ws.windows.first!.rootViewController as! UINavigationController
+//        for view in nc.topViewController!.view.subviews {
+//            if view.tag == 524 {
+//                view.removeFromSuperview()
+//                
+//                OrientationManager.lock(.landscape)
+//                UINavigationController.attemptRotationToDeviceOrientation()
+//            }
+//        }
     }
 }
 
