@@ -23,9 +23,6 @@ class GalaxyEggMainMenuViewController: UIViewController {
         GalaxyEggSetupLayout()
         GalaxyEggConfigureContent()
         GalaxyEggAudio.GalaxyEggPlayLoop(named: "ambient_space.mp3")
-        
-        OrientationManager.lock(.landscape)
-
     }
     
 //    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -223,19 +220,19 @@ class GalaxyEggMainMenuViewController: UIViewController {
 
 }
 
-//internal class GXUNavigationController: UINavigationController {
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        isNavigationBarHidden = true
-//    }
-//
-//    override var shouldAutorotate: Bool {
-//        return topViewController?.shouldAutorotate ?? super.shouldAutorotate
-//    }
-//
-//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-//        return .landscape
-//    }
-//}
+internal class GXUNavigationController: UINavigationController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        isNavigationBarHidden = true
+    }
+
+    override var shouldAutorotate: Bool {
+        return topViewController?.shouldAutorotate ?? super.shouldAutorotate
+    }
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
+}

